@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#173b35">
+  <title>춘향전툰 — 판소리계 소설 특징 평가</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar"><a class="brand" href="#top"><span class="brand-mark">춘</span> 춘향전툰</a><span class="course">이솔고 1학년 · 국어</span></header>
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy"><p class="eyebrow">우리 모둠의 네 컷, 고전의 목소리를 담다</p><h1>판소리계 소설의 특징,<br><em>웹툰에서 찾아볼까요?</em></h1><p>완성한 PNG를 올리면 장면의 맥락을 참고해 특징이 드러난 부분과 더 선명하게 표현할 방법을 함께 살펴봐요.</p><a class="hero-link" href="#upload">작품 평가 시작하기 <span>↓</span></a></div>
+      <div class="hero-art" aria-label="네 컷 만화 모양의 장식"><div class="sun"></div><div class="hill h1"></div><div class="hill h2"></div><div class="comic"><span>얼씨구!</span><span>좋다!</span><span>그렇지!</span><span>한바탕!</span></div><div class="flower">✿</div></div>
+    </section>
+    <section class="steps"><div><span>01</span><b>장면 고르기</b><small>우리 모둠 장면 확인</small></div><i>→</i><div><span>02</span><b>PNG 올리기</b><small>완성한 네 컷 웹툰</small></div><i>→</i><div><span>03</span><b>특징 살펴보기</b><small>AI 피드백과 함께 성찰</small></div></section>
+    <section class="work-area" id="upload">
+      <div class="section-head"><div><p class="eyebrow">OUR WEBTOON</p><h2>모둠 작품 평가</h2></div><p>작품을 보고 함께 이야기하며<br>최종 판단은 모둠이 해요.</p></div>
+      <div class="form-grid">
+        <div class="field"><label for="group">우리 모둠</label><select id="group"><option value="">모둠을 선택해 주세요</option><option>1조</option><option>2조</option><option>3조</option><option>4조</option><option>5조</option><option>6조</option><option>7조</option><option>8조</option></select><p class="hint" id="groupHint">모둠을 고르면 우리 모둠의 장면이 표시돼요.</p></div>
+        <div class="field"><label for="scene">제작 장면</label><select id="scene"><option value="">먼저 모둠을 선택해 주세요</option></select></div>
+      </div>
+      <div class="scene-card" id="sceneCard"><div class="scene-number">SCENE<br><b>—</b></div><div><h3>장면 안내</h3><p>모둠을 선택하면 원작 근거와 장면 흐름을 확인할 수 있어요.</p></div></div>
+      <div class="rubric"><div class="rubric-title"><span>평가 렌즈</span><small>다섯 가지 특징을 살펴봐요</small></div><div class="rubric-items"><article><b>01</b><strong>편집자적 논평</strong><p>이야기 밖 서술자가 끼어들어 감상·평가를 덧붙이나요?</p></article><article><b>02</b><strong>이중 언어 구조</strong><p>한문투 표현과 일상어가 함께 쓰이며 분위기를 만드나요?</p></article><article><b>03</b><strong>확장적 문체</strong><p>열거·반복·대구로 장면을 풍성하고 생생하게 그리나요?</p></article><article><b>04</b><strong>해학과 풍자</strong><p>우스운 말과 상황으로 권력자나 세태를 비판하나요?</p></article><article><b>05</b><strong>표면적·이면적 주제</strong><p>겉으로 드러난 이야기와 그 안의 사회적 의미가 함께 읽히나요?</p></article></div><p class="rubric-note">특징은 체크리스트처럼 억지로 넣기보다, 장면과 표현에서 근거가 보이는지 살펴보세요.</p></div>
+      <div class="upload-label"><label>완성한 PNG 파일</label><span>PNG · 최대 10MB</span></div>
+      <label class="dropzone" id="dropzone" for="fileInput"><input type="file" id="fileInput" accept="image/png,.png"><span class="upload-icon">↑</span><strong>PNG를 여기에 끌어오거나 <u>파일 선택</u></strong><small>한 장의 완성된 모둠 작품을 올려주세요.</small></label>
+      <div id="previewWrap" class="preview-wrap" hidden><img id="preview" alt="업로드한 모둠 웹툰 미리보기"><div><b id="fileName"></b><button id="removeFile" class="text-button" type="button">파일 바꾸기</button></div></div>
+      <div class="privacy"><span>✦</span><p>작품은 평가를 위해서만 전송되며, 이 페이지는 업로드 파일을 저장하지 않아요.<br>학생 이름·얼굴 등 개인정보가 들어간 이미지는 올리지 마세요.</p></div>
+      <button class="evaluate" id="evaluate" disabled>AI와 함께 작품 살펴보기 <span>↗</span></button>
+      <p class="api-help">AI 평가가 준비되지 않았다면 선생님께 알려 주세요.</p>
+      <div id="status" class="status" role="status" aria-live="polite" hidden></div>
+      <section id="result" class="result" hidden></section>
+    </section>
+    <section class="reflection"><div><p class="eyebrow">THINK TOGETHER</p><h2>감상에서 성찰로</h2><p>AI 피드백을 읽고 모둠원과 이야기해 보세요.<br>우리 작품의 근거를 설명하는 것도 중요한 배움이에요.</p></div><ol><li>가장 잘 드러난 특징은 무엇이고, 어느 컷에서 보이나요?</li><li>AI가 놓쳤거나 다르게 해석한 부분은 없나요?</li><li>한 컷을 더 고친다면 어떤 표현을 보태고 싶나요?</li></ol></section>
+  </main>
+  <footer><span>춘향전툰 · 판소리계 소설을 오늘의 이야기로</span><span>AI 평가는 학습을 돕는 참고 의견입니다.</span></footer>
+  <script type="module" src="app.js"></script>
+</body>
+</html>
